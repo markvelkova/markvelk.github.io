@@ -18,7 +18,6 @@ header {
 
 /* ======== lišta ======== */
 nav {
-  max-width: 900px;                 /* maximální šířka navigace */
   margin: 0 auto;                   /* na střed */
   display: flex;                    
   justify-content: space-between;   /* logo vlevo, menu vpravo */
@@ -54,7 +53,6 @@ nav a:hover {
 
 /* ======== hlavní obsah ======== */
 main {
-  max-width: 900px;      /* maximální šířka obsahu */
   margin: 2rem auto;     /* vycentrování a mezery nahoře a dole */
   padding: 0 1rem;       /* vnitřní mezery po stranách */
 }
