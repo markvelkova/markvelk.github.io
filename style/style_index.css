@@ -63,8 +63,7 @@ section {
 
 /* ========== armadillo =================*/
 pre {
-  font-size: 3vw;           /* % viewportu */
-  max-width: 100%;          /* nepřekročí šířku obrazovky */
+  font-size: 5vw;           /* % viewportu */
   margin: 0 auto;           /* vycentrování */
   overflow-x: auto;         /* horizontální scroll na malých obrazovkách */
   white-space: pre;         /* zachování mezer a nových řádků */
