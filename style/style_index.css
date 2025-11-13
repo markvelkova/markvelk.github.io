@@ -1,90 +1,81 @@
-/* ======== všechno ======== */
+
 body {
-  font-family: 'Courier New', Courier, monospace; /* moje oblíbené písmo */
+  font-family: 'Courier New', Courier, monospace; 
   margin: 0;            /* zruší výchozí vnější okraje stránky */
-  padding: 0;           /* zruší výchozí vnitřní okraje stránky */
-  background: #fafafa;  /* světle šedé pozadí */
-  color: #333;          /* tmavě šedá barva textu */
+  padding: 0;          
+  background: #fafafa;  
+  color: #333;          
 }
 
-/* ======== záhlaví ======== */
 header {
-  background: #fff;           /* ílé pozadí  */
-  border-bottom: 1px solid #ddd; /* tenoučká šedá linka dole */
-  position: sticky;           /* zůstane nahoře při scrollování */
-  top: 0;                     /* přilepení k hornímu okraji stránky */
-  z-index: 100;               /*  vykreslí se nad obsahem */
+  background: #fff;          
+  border-bottom: 1px solid #ddd; 
+  position: sticky;           
+  top: 0;                     
+  z-index: 100;               
 }
 
-/* ======== lišta ======== */
 nav {
-  margin: 0 auto;                   /* na střed */
+  margin: 0 auto;                  
   display: flex;                    
-  justify-content: space-between;   /* logo vlevo, menu vpravo */
+  justify-content: space-between;  
   align-items: center;              
-  padding: 0.5rem 1rem;              /* vnitřníí mezery */
+  padding: 0.5rem 1rem;             
 }
 
-/* ======== logo v navigaci ======== */
 nav .logo {
   font-weight: bold;     
   font-size: 1.2rem; 
 }
 
-/* ======== seznam odkazů ======== */
 nav ul {
-  list-style: none;      /* bez odrážek */
-  margin: 0;             /* bez vnějších mezer */
-  padding: 0;            /* bez vnitřních mezer */
-  display: flex;         /* vedle sebe */
-  gap: 1rem;             /* mezera mezi položkami */
+  list-style: none;      
+  margin: 0;             
+  padding: 0;            
+  display: flex; 
+  gap: 1rem; 
 }
 
-/* ======== odkazy v navigaci ======== */
 nav a {
-  text-decoration: none; /* bez podtržení */
-  color: #333;           /* tmavě šedá barva */
-  transition: color 0.2s; /* plynulá změna barvy při najetí */
+  text-decoration: none; 
+  color: #333;         
+  transition: color 0.2s; 
 }
 
 nav a:hover {
-  color: #007acc;        /* modrá barva po najetí myší */
+  color: #007acc;        
 }
 
-/* ======== hlavní obsah ======== */
 main {
-  margin: 2rem auto;     /* vycentrování a mezery nahoře a dole */
-  padding: 0 1rem;       /* vnitřní mezery po stranách */
+  margin: 2rem auto;     
+  padding: 0 1rem;       
 }
 
 section {
   margin-bottom: 4rem;   /* mmezera mezi sekcemi */
 }
 
-/* ========== armadillo =================*/
 pre {
-  font-size: 5vw;           /* % viewportu */
-  margin: 0 auto;           /* vycentrování */
-  overflow-x: auto;         /* horizontální scroll na malých obrazovkách */
-  white-space: pre;         /* zachování mezer a nových řádků */
+  font-size: 5vw;           
+  margin: 0 auto;        
+  overflow-x: none;        
+  white-space: pre; 
 }
 
-/* ======== tlačítko pro mobilní menu ======== */
 .menu-toggle {
-  display: none;         /* default skryté */
-  font-size: 1.5rem;     /* Velká ikona ☰ */
+  display: none;         
+  font-size: 1.5rem;     /*vleká ikona ☰ */
 }
 
-/* ======== styly pro mobilní zobrazení ======== */
-@media (max-width: 600px) { /* upatni se pro obrazovky do 600px */
+@media (max-width: 600px) { 
   nav ul {
-    display: none;           /* schová menu */
-    flex-direction: column;  /* položky pod sebou */
-    background: white;       /* bílé pozadí */
-    position: absolute;      /* umístění přes obsah */
-    top: 60px;                /* pod hlavičkou */
-    right: 1rem;              /* zarovnání doprava */
-    border: 1px solid #ddd;   /* rámeček */
+    display: none;     
+    flex-direction: column; 
+    background: white;   
+    position: absolute;     
+    top: 60px;             
+    right: 1rem;              
+    border: 1px solid #ddd;  
     padding: 1rem;           
   }
   nav ul.show {
