@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citrusovník</title>
+  <link rel="stylesheet" href="../style/style_index.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Citrusovník</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="../index.html">Zpátky domů</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <ul>
+      <li><a href="courier.html">Obrana kurýra</a></li>
+    </ul>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

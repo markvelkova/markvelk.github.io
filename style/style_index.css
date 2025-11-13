@@ -1,6 +1,8 @@
 
 body {
   font-family: 'Courier New', Courier, monospace; 
+  font-weight: 500; 
+  /*font-family: 'Consolas', Courier, monospace;*/
   margin: 0;            /* zruší výchozí vnější okraje stránky */
   padding: 0;          
   background: #fafafa;  
@@ -8,7 +10,8 @@ body {
 }
 
 header {
-  background: #fff;          
+  background: #fff;    
+  font-size: 1.2rem;      
   border-bottom: 1px solid #ddd; 
   position: sticky;           
   top: 0;                     
@@ -25,7 +28,7 @@ nav {
 
 nav .logo {
   font-weight: bold;     
-  font-size: 1.2rem; 
+  font-size: 1.8rem; 
 }
 
 nav ul {
@@ -61,11 +64,13 @@ section {
 }
 
 pre {
+  font-family: 'Courier New', Courier, monospace; 
   font-size: 4.5vw;           
   margin: 0 auto;        
   overflow-x: none;        
   white-space: pre; 
 }
+
 
 .menu-toggle {
   display: none;         

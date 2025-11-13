@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obrana kurýra</title>
+  <link rel="stylesheet" href="../style/style_index.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Obrana kurýra</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="../index.html">Zpátky do bezpečí</a></li>
+        <li><a href="citrusovnik.html">Citrusovník</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p>
+        Proč se mi <span style="font-family: 'Courier New', Courier, monospace;">Courier New</span>, <span style="font-family: 'Consolas', Courier, monospace;">Consolas</span> a podobná písma zamlouvají víc než jiná? 
+        Předně pro rovnoprostornatost, chcete-li monospace, tedy pro stejnou šířku všech znaků. Je to vlastnost trošku dvojsečná, nevýhoda samozřejmě je,
+        že dochází k plýtvání místem - 'i' určitě nepotřebuje k tomu, aby se cítilo komfortně, tolik prostoru jako teba 'm'. Také může působit poněkud archaicky, 
+        celkem právem, jelikož ačkoli Courier New oslavil půlstoletiny, když já jsem se učila mluvit, monospace písma si mnoho lidí (staticky ověřeno průzkumem na závratném vzorku 1)
+        spojí s psacími stroji. Tam by bylo dost nepratické mít mechanismus, který po otisknutí písmenka vypočítá, o kolik přesně se má posunout doprava, a přesně tento posun vykoná.
+        Budiž, proč ale takové písmo používat na počítači ve století 21.? Jistě je tu skupina lidí, která ho používá z čiré nostalgie (za předpokladu, že vůbec počítač používá
+        a nezůstala u psacího stroje nadobro). Těmto lidem se nechci a ani nemohu smát - starý psací stroj byl u babičky a dědy vzácná hračka, na kterou jsme si se sestřenicemi musely
+        udělat pořadník. Nicméně bez klapání a cinkání (zkuste si napsat '\a' v jakémkoli rozumném programovacím jazyce), zaseknuté pásky, otáčení (LF) a posouvání válce (CR) to 
+        za to úplně nestojí. 
+    </p>
+    <p>
+        Lehce dětinský, ale o to pádnější důvod by mohl být, že se jím dá kreslit (viz přenašeče lepry na hlavní stránce). Ascii art je krásná věc, pravda taky už archaická,
+        ale přesto krásná. Častěji se s ním asi setkají lidé pracující s příkazovým řádkem a jeho obdobou. Jediné, co překoná euforii, že program vypsal to, co měl vypsat, je, když 
+        to vypíše zabalené v bublině vycházející
+        z úst <a href="https://en.wikipedia.org/wiki/Cowsay">písmenkové krávy</a>. S trochou snahy se dají najít nádherné příklady lidové tvořivosti, životopisy, zvířátka, graffiti,
+        vláčky (sl). 
+        S mnohem větším objemem snahy je pak možné si podobnou věc vytvořit. Takový obrázek je úžasně úsporný, zabírá pár kB, dá se okopírovat může ho poslat i kdejaká hromada drátů, která 
+        umí aspoň elemenárně komunikovat (a možná má duši).
+    </p>
+    <p>
+        S ascii artem související téma je snadné formátování. Pokud bychom byli ochotni tabulky a logy považovat za umění (a pokud vůbec považujeme za formu umění ascii art), 
+        dalo by se říct, že se jedná o podmnožinu ascii artu. V momentě, kdy máme zaručeno, že šířka znaku je vždy stejná, najednou nejsou potřeba kdovíjaká wordovská
+        udělátka, na vyrobení jednoduché tabulky, nakreslení diagramu, přesné odsazení na mnoho úrovní, vizuální členění textu na sloupce či jiné obrazce. Zarovnání do bloku
+        se najednou stává taky takřka triviální záležitostí (moje mladší já, které na tom strávilo hodiny mlácením hlavou do klávesnice mě teď probodlo velmi ošklivým pohledem).
+        Možná opět záležitost spíš pro prográmatory a podobné existence. Ovšem i pro každého, kdo na rychlé poznámky používá notepad. Je to nástroj, nad nímž má uživatel
+        plnou kontrolu, je snadný na používání a nevyžaduje sundavání rukou z klávesnice a hledání myši (ano, teoreticky se dá vše dělat bez myši nebo touchpadu). A moje zápisky 
+        z počítačových systémů jsou důkazem, že se po troše cviku dá písmenky překreslit FAT tabulka z prezentace rychlostí dostatečnou na neztracení toku myšlenek přednášejícího.
+        Kdo chce prokrastinovat, může to zkusit najít.
+    </p>
+    <p>
+        Na závěr dva postřehy - za prvé pohled na text zarovnaný i do sloupců působí na některé lidi (opět staticky ověřeno průzkumem na závratném vzorku 1) uklidňujícím dojmem, 
+        za druhé obliba tohoto písma může jednoduše vysvětlitelná programátorským Stockholmským syndromem. Kdo ví.
+    </p>
+    <p>
+        A na definitivní závěr zamyšlení - Courier je patkový, subtilní a širší než delší, mně osobně se tedy čte hůř než třeba méně patkové Consolas. To ale nemusí být nutně 
+        na úkor funkčnosti. Text mi nejde tak snadno jen přelétnout očima a když už se do něj pustím, věnuji mu výrazně větší pozornost. A kdo se dočetl až sem, je se mnou v tomhle 
+        možná zajedno.
+    </p>
+    
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
