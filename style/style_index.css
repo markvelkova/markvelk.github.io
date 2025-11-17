@@ -3,10 +3,11 @@ body {
   font-family: 'Courier New', Courier, monospace; 
   font-weight: 500; 
   /*font-family: 'Consolas', Courier, monospace;*/
-  margin: 0;            /* zruší výchozí vnější okraje stránky */
+  margin: 10;            /* zruší výchozí vnější okraje stránky */
   padding: 0;          
   background: #fafafa;  
-  color: #333;          
+  color: #333;  
+  text-align: justify;        
 }
 
 header {
@@ -95,6 +96,9 @@ pre {
   .menu-toggle {
     display: block; /* zobrazí trojčáru */
     
+  }
+  body {
+    margin:0;
   }
   
 }
